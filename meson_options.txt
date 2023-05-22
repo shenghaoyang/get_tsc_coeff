@@ -1,0 +1,2 @@
+option('libbpf_static', type: 'boolean', value: false,
+    description: 'try to link libbpf and its dependencies statically')

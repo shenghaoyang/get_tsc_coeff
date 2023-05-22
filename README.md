@@ -22,6 +22,13 @@ definitely incompatible.
     meson setup builddir
     ninja -C builddir
 
+To attempt linking `libbpf` statically, setup the build director with:
+
+    meson setup -Dlibbpf_static=true builddir
+
+Watch out for warnings about static versions of `libbpf`'s own dependencies not
+being found.
+
 # Run
 
 This program relies on a bunch of private `vvar` details. It may return bogus
