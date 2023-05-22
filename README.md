@@ -1,8 +1,9 @@
 `get_tsc_coeff`
 ---------------
 
-Nasty tool that reads coefficients used to convert TSC ticks into nanoseconds, 
-from the `vvar` data page mapped by the kernel into a process.
+Nasty tool that reads coefficients used to convert TSC tick deltas into
+nanosecond deltas, from the `vvar` data page mapped by the kernel into a
+process.
 
 (why would you _ever_ need this?)
 

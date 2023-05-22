@@ -335,7 +335,7 @@ int main(__attribute__((unused)) int argc,
     goto fail_coeff;
   }
 
-  printf("ns = (tsc * %" PRIu32 ") >> %" PRIu32 "\n", mult, shift);
+  printf("delta_ns = (delta_tsc * %" PRIu32 ") >> %" PRIu32 "\n", mult, shift);
   ret = 0;
 
 fail_coeff:
